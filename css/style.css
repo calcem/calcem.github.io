@@ -11,14 +11,35 @@ p{
  font-size: 15px;
 }
 
+footer{
+	color: #8395a7;
+	position:center;
+}
+
 .header{
       background-color: #576574;
       position: top;
-      padding: 60px;
+      padding: 30px;
 }
 
 .headshot{
 	width: "100";
 	height: "100";
 	vertical-align: left;
+}
+
+.sidebar{
+	background-color: #576574;
+	position: left;
+	width: 200px;
+	padding: 35px;
+
+}
+
+
+
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 0px;
 }
