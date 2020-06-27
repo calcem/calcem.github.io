@@ -6,17 +6,17 @@
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="images/icons8-code-48.png" type="image/png" size="16X16">
 <title>Mario Calce</title>
-<body onload="hideAndDisplay()">
+<body onload="hideAndDisplay('bio')">
 <div class="grid">
 	<div class="sidebar">
 	<img src="images/20190917_220132.jpg" alt="headshot" width="200" height="200" class="headshot">
 	<ul>
-		<li class="menu" onclick="hideAndDisplay('about')">About</li>
-		<li class="menu" onclick="hideAndDisplay('projects')">Projects</li>
-		<li class="menu" onclick="hideAndDisplay('socials')">Socials</li>
+		<li class="menu" onclick="hideAndDisplay('bio')">About</li>
+		<li class="menu" onclick="hideAndDisplay('work')">Projects</li>
+		<li class="menu" onclick="hideAndDisplay('social')">Socials</li>
 	</ul>
 	</div>
-	<div class ="socials">
+	<div id="social" class ="socials">
 	<h2 class="headers">You can check me out and reach me through my socials</h2>
 	<div class="twitter">
 	<a href="https://twitter.com/mariocalce"><img src="images/icons8-twitter-480.png" alt="twitter" width="120" height="120"></a>
@@ -34,7 +34,7 @@
  		 All icons by <a target="_blank" href="https://icons8.com">Icons8</a>	
 	</footer>
 	</div>
-	<div class="about">
+	<div id="bio" class="about">
 		<h1 class="headers">Hello There</h1>
 		<p>I'm Mario
 
@@ -42,7 +42,7 @@
   			All icons by <a target="_blank" href="https://icons8.com">Icons8</a>
 		</footer>
 	</div>
-	<div class="projects">
+	<div id="work" class="projects">
 		<h3 class="headers">Projects I've Worked On</h3>
 		<p>Here is a list of projects I've worked on.</p>
 		<div class="project">

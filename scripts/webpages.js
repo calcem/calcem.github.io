@@ -2,25 +2,25 @@ function hideAndDisplay(divId)
 {
 	var div = document.getElementById(divId);
 	switch(div){
-		case "about":
-			setDisplayBlock("about");
-			setDisplayNone("projects");
-			setDisplayNone("socials");
+		case "bio":
+			setDisplayBlock("bio");
+			setDisplayNone("work");
+			setDisplayNone("social");
 		 break;
-		case "projects":
-			setDisplayGrid("projects");
-			setDisplayNone("about");
+		case "work":
+			setDisplayGrid("work");
+			setDisplayNone("bio");
 			setDisplayNone("socials");
 			break;
-		case "socials":
-			setDisplayGrid("socials");
-			setDisplayNone("projects");
-			setDisplayNone("about");
+		case "social":
+			setDisplayGrid("social");
+			setDisplayNone("work");
+			setDisplayNone("bio");
 			break;
 		default:
-			setDisplayBlock("about");
-			setDisplayNone("projects");
-			setDisplayNone("socials");
+			setDisplayBlock("bio");
+			setDisplayNone("work");
+			setDisplayNone("social");
 	}
 
 }
