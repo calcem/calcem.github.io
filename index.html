@@ -2,7 +2,52 @@
 <html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<script type="text/javascript" src="/scripts/webpages.js"></script>
+<script type="text/javascript">
+	function hideAndDisplay(divId)
+{
+	var div = document.getElementById(divId);
+	switch(div){
+		case "bio":
+			setDisplayBlock("bio");
+			setDisplayNone("work");
+			setDisplayNone("social");
+		 break;
+		case "work":
+			setDisplayGrid("work");
+			setDisplayNone("bio");
+			setDisplayNone("socials");
+			break;
+		case "social":
+			setDisplayGrid("social");
+			setDisplayNone("work");
+			setDisplayNone("bio");
+			break;
+		default:
+			setDisplayBlock("bio");
+			setDisplayNone("work");
+			setDisplayNone("social");
+	}
+
+}
+
+function setDisplayBlock(divId)
+{
+	var div = document.getElementById(divId);
+	div.style.display = "block";
+}
+
+function setDisplayGrid(divId)
+{
+	var div = document.getElementById(divId);
+	div.style.display = "grid";
+}
+
+function setDisplayNone(divId)
+{
+	var div = document.getElementById(divId);
+	div.style.display = "none";
+}
+</script>
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="images/icons8-code-48.png" type="image/png" size="16X16">
 <title>Mario Calce</title>
