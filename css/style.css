@@ -19,14 +19,14 @@ footer{
 }
 
 .about{
-	display: none;
+	display: block;
 }
 
 .projects{
 	display: block;
 }
 .socials{
-	display: none;
+	display: grid;
 	grid-template-columns: headers auto auto footer;
 	grid-template-rows:  headers auto auto;
 }
