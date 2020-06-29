@@ -6,14 +6,14 @@
 <link rel="stylesheet" href="/css/style.css">
 <link rel="icon" href="images/icons8-code-48.png" type="image/png" size="16X16">
 <title>Mario Calce</title>
-<body>
+<body onload="hideAndDisplay('bio')">
 <div class="grid">
 	<div class="sidebar">
 	<img src="images/20190917_220132.jpg" alt="headshot" width="200" height="200" class="headshot">
 	<ul>
-		<li class="menu" ><a href="#">About</a></li>
-		<li class="menu" ><a href="projects.html">Projects</a></li>
-		<li class="menu" ><a href="socials.html">Socials</a></li>
+		<li class="menu" ><button onclick='hideAndDisplay("bio")'>About</button></li>
+		<li class="menu" ><button onclick='hideAndDisplay("projects")'>Projects</button></li>
+		<li class="menu" ><button onclick='hideAndDisplay("socials")'>Socials</button></li>
 	</ul>
 	</div>
 	<div id="bio" class="about">
