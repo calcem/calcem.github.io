@@ -1,26 +1,26 @@
 function hideAndDisplay(divId)
 {
-	var div = document.getElementById(divId);
-	switch(div){
-		case "bio":
-			setDisplayBlock("bio");
-			setDisplayNone("work");
-			setDisplayNone("social");
+	
+	switch(divId){
+		case "about":
+			setDisplayBlock("about");
+			setDisplayNone("projects");
+			setDisplayNone("socials");
 		 break;
-		case "work":
-			setDisplayGrid("work");
-			setDisplayNone("bio");
+		case "projects":
+			setDisplayBlock("projects");
+			setDisplayNone("about");
 			setDisplayNone("socials");
 			break;
-		case "social":
-			setDisplayGrid("social");
-			setDisplayNone("work");
-			setDisplayNone("bio");
+		case "socials":
+			setDisplayGrid("socials");
+			setDisplayNone("projects");
+			setDisplayNone("about");
 			break;
 		default:
-			setDisplayBlock("bio");
-			setDisplayNone("work");
-			setDisplayNone("social");
+			setDisplayBlock("about");
+			setDisplayNone("projects");
+			setDisplayNone("socials");
 	}
 
 }
@@ -29,6 +29,7 @@ function setDisplayBlock(divId)
 {
 	var div = document.getElementById(divId);
 	div.style.display = "block";
+	
 }
 
 function setDisplayGrid(divId)

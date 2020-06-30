@@ -1,12 +1,21 @@
 body{
 	background-color: #222f3e;
 	display: grid;
-	grid-column: sidebar auto
+	grid-column: 1;
+	grid-column-gap: 0px;
 }
 
 .headers{ 
     color: #c8d6e5;
 }
+a{
+	color:#2980b9;
+}
+
+a:link, a:visited {
+    color: #2980b9;
+}
+
 p{
  color: #8395a7;
  font-family: sans-serif;
@@ -20,16 +29,17 @@ footer{
 
 li{
 	list-style-type:none;
+	color: #8395a7;
 }
 
-.about{
+#about{
 	display: block;
 }
 
-.projects{
+#projects{
 	display: block;
 }
-.socials{
+#socials{
 	display: grid;
 	grid-template-columns: headers auto auto footer;
 	grid-template-rows:  headers auto auto;
@@ -68,8 +78,7 @@ li{
 .grid{
 	display: grid;
 	grid-template-columns: 1fr 3fr;
-	grid-column: 
-	grid-gap: 0px;
+	grid-column-gap: 0px;
 }
 
 
