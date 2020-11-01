@@ -1,12 +1,12 @@
 body{
-	background-color: #222f3e;
+	background-color: #c8d6e5;
 	display: grid;
 	grid-column: 1;
 	grid-column-gap: 0px;
 }
 
 .headers{ 
-    color: #c8d6e5;
+    color: #222f3e;
 }
 a{
 	color:#2980b9;
@@ -17,7 +17,7 @@ a:link, a:visited {
 }
 
 p{
- color: #8395a7;
+ color: #222f3e;
  font-family: sans-serif;
  font-size: 15px;
 }
@@ -29,7 +29,7 @@ footer{
 
 li{
 	list-style-type:none;
-	color: #8395a7;
+	color: #222f3e;
 }
 
 #about{
@@ -52,7 +52,7 @@ li{
 }
 
 .sidebar{
-	background-color: #576574;
+	background-color: #c8d6e5;
 	position: left;
 	width: 200px;
 	height: 100%;
@@ -62,7 +62,7 @@ li{
 
 .menu{
 	
-	background-color: #2c3e50:; 
+	background-color: #8395a7:; 
 	border:none;
 	height: 100px;
 	width: 150px;
@@ -72,7 +72,7 @@ li{
 }
 
 .menu:hover{
-	background-color: #95a5a6; 
+	background-color: #c8d6e5; 
 }
 
 .grid{
